@@ -152,6 +152,7 @@
                 <div class="social d-flex justify-content-center">
                     <a class="mx-2" href="#!"><i class="fab fa-instagram"></i></a>
                     <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a id="copy-url" class="mx-2" href="#!"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
                 </div>
             </div>
         </section>
@@ -190,16 +191,20 @@
             }
             $('#copy-address').click(function() {
               copyToClipboard('전라남도 여수시 율촌면 내리길 106-1');
-              alert('복사되었습니다');
+              alert('주소가 복사되었습니다');
             });
             $('#copy-email').click(function() {
               copyToClipboard('email@domain.com');
-              alert('복사되었습니다');
+              alert('이메일이 복사되었습니다');
             });
             $('#copy-phone').click(function() {
               copyToClipboard('061-683-1512');
-              alert('복사되었습니다');
+              alert('전화번호가 복사되었습니다');
             });
+            $('#copy-url').click(function() {
+                copyToClipboard('http://cafe155.herokuapp.com/')
+                alert('링크가 복사되었습니다.')
+            })
         </script>
         <!-- Popup Script-->
         <script>
