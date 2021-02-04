@@ -10343,3 +10343,10 @@ body {
 .footer {
   padding: 5rem 0;
 }
+
+.popup-body {
+  margin-top: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: black;
+}
